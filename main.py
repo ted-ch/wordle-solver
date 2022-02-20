@@ -39,9 +39,12 @@ if __name__ == '__main__':
             else:
                 print('Invalid input! Please retry.')                
                 break
-
+        
         print('* Please try:')
+        count = 0
         for word in word_dict:
             if check_word(word):
                 print('-', word)
+                count += 1
+        print(f'* Remaining candidates: {count}')
 
